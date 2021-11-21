@@ -30,12 +30,19 @@ header {
   justify-content: space-between;
   padding-left: 30px;
   align-items: stretch;
+  height: 15vh;
+}
+
+img.logo {
+  align-self: center;
+  height: 40px;
 }
 
 nav {
   display: flex;
   align-items: stretch;
   width: 30%;
+  font-size: 14px;
 }
 
 main {
@@ -46,101 +53,28 @@ main h3 {
   margin: 0;
 }
 
-main p {
-  margin: 0;
+.title p {
+  margin-top: 10px;
   font-size: 14px;
 }
 
-#search {
-  display: flex;
-  align-items: stretch;
-  margin-top: 10px;
+/* TODO: Spécifier les icones */
+.fas:before {
+  font-size: 16px;
 }
 
-#search button {
-  border-radius: 0 10px 10px 0;
-  background-color: var(--main-blue);
-  color: white;
-  border-color: var(--main-blue);
-}
-
-#search input {
-  font-weight: bold;
-}
-
-#filter {
-  display: flex;
-  align-items: center;
-  margin-left: 10px;
-}
-
-#filter button {
-  border-radius: 50px;
-  background-color: white;
-  border: 1px solid grey;
-  display: flex;
-  align-items: center;
-  padding: 10px;
-}
-
-#filter button p {
-  margin-left: 25px;
-  font-weight: bold;
-}
-
-#filter span.icons {
-  left: 30px;
-}
-
-#filter span.icons .icon-background {
-  color: var(--secondary-blue);
+input:focus {
+  outline: none;
 }
 
 .icons {
   color: var(--main-blue);
 }
 
-.filter-list {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 20px;
+.icons:hover {
+  cursor: pointer;
 }
 
-#search span.icons {
-  display: flex;
-  align-items: center;
-  padding: 15px;
-  border-radius: 10px 0 0 10px;
-  background-color: var(--main-grey);
-}
-
-ul.menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  justify-content: space-evenly;
-}
-
-ul.menu li {
-  display: flex;
-  align-items: center;
-  border-top: 2px solid var(--main-background);
-  padding: 0px 10px;
-}
-
-ul.menu li:hover {
-  border-top: 2px solid var(--main-blue);
-}
-
-ul.menu a {
-  text-decoration: none;
-}
-
-ul.menu a:visited {
-  color: black;
-}
 .box {
   box-sizing: border-box; /* Opera/IE 8+ */
   -moz-box-sizing: border-box; /* Firefox, autres Gecko */
