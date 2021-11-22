@@ -24,6 +24,11 @@ body {
   flex-direction: row;
 }
 
+.title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -73,6 +78,14 @@ input:focus {
 
 .icons:hover {
   cursor: pointer;
+}
+
+/* Generic container */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
 }
 
 .box {
