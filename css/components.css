@@ -5,34 +5,19 @@
   flex-direction: row;
   align-items: center;
   margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 #filter {
   display: flex;
   align-items: center;
-}
-
-#filter button {
-  border-radius: 50px;
-  background-color: white;
-  border: 2px solid gainsboro;
-  display: flex;
-  align-items: center;
-  padding: 10px 10px 10px 45px;
-}
-
-#filter button span {
-  font-weight: bold;
-  font-size: 14px;
-}
-
-#filter span.icons {
-  left: 45px;
-  font-size: 20px;
-}
-
-#filter span.icons .icon-background {
-  color: var(--secondary-blue);
+  border-radius: 20px;
+  gap: 10px;
+  border-top: 2px solid var(--main-grey);
+  border-right: 2px solid var(--main-grey);
+  border-bottom: 2px solid var(--main-grey);
+  padding-right: 10px;
 }
 
 /* Search component */
@@ -130,7 +115,7 @@ span.info-icon ::before {
 
 .card {
   background-color: white;
-  padding: 5px;
+  padding: 5px 5px 10px 5px;
   border-radius: 20px;
   margin-top: 10px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
@@ -139,7 +124,7 @@ span.info-icon ::before {
 }
 
 .card img {
-  height: 120px;
+  height: 100px;
   width: 100%;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
@@ -159,8 +144,9 @@ span.info-icon ::before {
 }
 
 .card-description > .stars-rating > .fas::before {
-  font-size: 12px;
+  font-size: 10px;
   color: var(--main-blue);
+  margin-right: 1px;
 }
 
 .card-description > .stars-rating > .fas.grey-star::before {
@@ -168,13 +154,14 @@ span.info-icon ::before {
 }
 
 .card-description .content {
-  font-size: 14px;
+  font-size: 11px;
   margin-top: 5px;
 }
 .card-list {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  align-self: center;
 }
 
 .places {
@@ -184,6 +171,10 @@ span.info-icon ::before {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+#all.places {
+  width: 66%;
 }
 
 .title-icon {
@@ -204,7 +195,7 @@ span.info-icon ::before {
   display: flex;
   flex-direction: row;
   height: 120px;
-  width: 350px;
+  width: 100%;
 }
 
 #most-popular.card img {
@@ -220,4 +211,67 @@ span.info-icon ::before {
 
 #most-popular > .card-description {
   margin: 10px 20px 10px 20px;
+}
+
+#most-popular.places {
+  width: 33%;
+}
+
+.interests {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  width: 100%;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.column-single {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.column-single > .single > img {
+  height: 350px;
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.column-double {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.column-double > .double > img {
+  height: 120px;
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.double {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px;
+}
+
+.single {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px;
+}
+
+.single > .title {
+  padding: 15px;
+}
+
+.double > .title {
+  padding: 15px;
 }

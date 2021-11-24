@@ -3,7 +3,9 @@
 */
 
 /* Imports */
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
 
 :root {
   --main-blue: #0065fc;
@@ -14,7 +16,7 @@
 
 body {
   background-color: var(--main-background);
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   margin-left: 30px;
   margin-right: 10px;
 }
@@ -26,7 +28,7 @@ body {
 
 .title {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 header {
@@ -66,14 +68,18 @@ main h3 {
 /* TODO: Spécifier les icones */
 .fas:before {
   font-size: 16px;
+  color: var(--main-blue);
 }
 
 input:focus {
   outline: none;
 }
 
-.icons {
+.icon {
   color: var(--main-blue);
+  background-color: var(--secondary-blue);
+  padding: 10px;
+  border-radius: 50%;
 }
 
 .icons:hover {
@@ -85,7 +91,7 @@ input:focus {
 .container {
   display: flex;
   flex-direction: row;
-  column-gap: 10px;
+  column-gap: 35px;
 }
 
 .box {
