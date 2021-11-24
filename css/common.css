@@ -93,7 +93,7 @@ input:focus {
 .container {
   display: flex;
   flex-direction: row;
-  column-gap: 35px;
+  column-gap: 20px;
 }
 
 .container-column {
