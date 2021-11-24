@@ -9,7 +9,7 @@
   gap: 20px;
 }
 
-#filter {
+.filter {
   display: flex;
   align-items: center;
   border-radius: 20px;
@@ -22,28 +22,45 @@
 
 /* Search component */
 
-#search {
+.search {
   display: flex;
   align-items: stretch;
   margin-top: 20px;
+  height: 45px;
 }
 
-#search button {
+.search button {
   border-radius: 0 10px 10px 0;
   background-color: var(--main-blue);
   color: white;
   border: none;
+  padding: 15px;
 }
 
-#search button:hover {
+.search form {
+  display: flex;
+}
+
+.filter:hover {
+  color: white;
+  background: var(--main-blue);
   cursor: pointer;
 }
 
-#search input {
-  font-weight: bold;
+.search > button:hover {
+  cursor: pointer;
 }
 
-#search span.icons {
+.search > form > input::placeholder {
+  padding-left: 10px;
+}
+
+.search > form > input {
+  font-weight: bold;
+  border: 1px solid var(--main-grey);
+}
+
+.search > span.icons {
   display: flex;
   align-items: center;
   padding: 15px;
@@ -186,34 +203,34 @@ span.info-icon ::before {
   font-size: 20px;
 }
 
-#most-popular.card-list {
+.most-popular.card-list {
   display: flex;
   flex-direction: column;
 }
 
-#most-popular.card {
+.most-popular.card {
   display: flex;
   flex-direction: row;
   height: 120px;
   width: 100%;
 }
 
-#most-popular.card img {
+.most-popular.card img {
   width: 140px;
   height: 100%;
   border-radius: 20px 0px 0px 20px;
 }
 
-#most-popular > .card-description.stars-rating {
+.most-popular > .card-description.stars-rating {
   position: absolute;
   bottom: 0px;
 }
 
-#most-popular > .card-description {
+.most-popular > .card-description {
   margin: 10px 20px 10px 20px;
 }
 
-#most-popular.places {
+.most-popular.places {
   width: 33%;
 }
 

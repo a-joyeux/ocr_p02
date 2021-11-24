@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta
-      name="viewport"
-      charset="utf-8"
-      content="width=device-width, initial-scale=1"
-    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Booki</title>
     <link
       rel="stylesheet"
@@ -21,11 +18,11 @@
 
   <body>
     <header>
-      <img class="logo" src="images/logo/Booki.png" />
+      <img alt="" class="logo" src="images/logo/Booki.png" />
       <nav>
         <ul class="menu">
-          <li><a href="#Hébergements">Hébergements</a></li>
-          <li><a href="#Activités">Activités</a></li>
+          <li><a href="#hébergements">Hébergements</a></li>
+          <li><a href="#activités">Activités</a></li>
         </ul>
       </nav>
     </header>
@@ -34,34 +31,36 @@
         <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
         <p>En plein centre ville ou en pleine nature</p>
       </div>
-      <div id="search">
+      <div class="search">
         <span class="icons">
           <i class="fas fa-map-marker-alt"></i>
         </span>
-        <input type="text" placeholder="Marseille, France" />
+        <form>
+          <input type="text" placeholder="Marseille, France" />
+        </form>
         <button class="button">Rechercher</button>
       </div>
       <div class="filter-list">
         <h3>Filtres</h3>
 
-        <div id="filter">
+        <div class="filter">
           <i class="fas fa-money-bill-wave icon"></i>
           <span>Economique</span>
         </div>
 
-        <div id="filter">
-          <i class="fas fa-money-bill-wave icon"></i>
-          <span>Economique</span>
+        <div class="filter">
+          <i class="fas fa-child icon"></i>
+          <span>Familial</span>
         </div>
 
-        <div id="filter">
-          <i class="fas fa-money-bill-wave icon"></i>
-          <span>Economique</span>
+        <div class="filter">
+          <i class="fas fa-heart icon"></i>
+          <span>Romantique</span>
         </div>
 
-        <div id="filter">
-          <i class="fas fa-money-bill-wave icon"></i>
-          <span>Economique</span>
+        <div class="filter">
+          <i class="fas fa-dog icon"></i>
+          <span>Animaux autorisés</span>
         </div>
       </div>
       <div class="info">
@@ -73,10 +72,12 @@
 
       <div class="container">
         <div id="all" class="places">
-          <span class="title">Hébergements à Marseille</span>
+          <span id="hébergements" class="headline"
+            >Hébergements à Marseille</span
+          >
           <div class="card-list">
             <div class="card">
-              <img src="images/hebergements/4_small/cannebiere.jpg" />
+              <img alt="" src="images/hebergements/4_small/cannebiere.jpg" />
               <div class="card-description">
                 <span class="title">Auberge La Cannebière</span>
                 <span class="content">Nuit à partir de <b>25€</b></span>
@@ -90,7 +91,7 @@
               </div>
             </div>
             <div class="card">
-              <img src="images/hebergements/4_small/port.jpg" />
+              <img alt="" src="images/hebergements/4_small/port.jpg" />
               <div class="card-description">
                 <span class="title">Hôtel du port</span>
                 <span class="content">Nuit à partir de <b>52€</b></span>
@@ -104,7 +105,7 @@
               </div>
             </div>
             <div class="card">
-              <img src="images/hebergements/4_small/mouettes.jpg" />
+              <img alt="" src="images/hebergements/4_small/mouettes.jpg" />
               <div class="card-description">
                 <span class="title">Hôtel Les mouettes</span>
                 <span class="content">Nuit à partir de <b>76€</b></span>
@@ -118,7 +119,7 @@
               </div>
             </div>
             <div class="card">
-              <img src="images/hebergements/4_small/mer.jpg" />
+              <img alt="" src="images/hebergements/4_small/mer.jpg" />
               <div class="card-description">
                 <span class="title">Hôtel de la mer</span>
                 <span class="content">Nuit à partir de <b>46€</b></span>
@@ -132,7 +133,7 @@
               </div>
             </div>
             <div class="card">
-              <img src="images/hebergements/4_small/panier.jpg" />
+              <img alt="" src="images/hebergements/4_small/panier.jpg" />
               <div class="card-description">
                 <span class="title">Auberge Le Panier</span>
                 <span class="content">Nuit à partir de <b>23€</b></span>
@@ -146,7 +147,7 @@
               </div>
             </div>
             <div class="card">
-              <img src="images/hebergements/4_small/amina.jpg" />
+              <img alt="" src="images/hebergements/4_small/amina.jpg" />
               <div class="card-description">
                 <span class="title">Hôtel chez Amina</span>
                 <span class="content">Nuit à partir de <b>96€</b></span>
@@ -162,16 +163,16 @@
           </div>
           <span>Afficher plus</span>
         </div>
-        <div id="most-popular" class="places">
+        <div class="places">
           <div class="title-icon">
-            <span class="title">Les plus populaires</span>
+            <span class="headline">Les plus populaires</span>
             <span class="icon">
               <i class="fas fa-chart-line"></i>
             </span>
           </div>
-          <div id="most-popular" class="card-list">
-            <div id="most-popular" class="card">
-              <img src="images/hebergements/4_small/soleil.jpg" />
+          <div class="card-list">
+            <div class="card most-popular">
+              <img alt="" src="images/hebergements/4_small/soleil.jpg" />
               <div class="card-description">
                 <span class="title">Hôtel Le soleil du matin</span>
                 <span class="content">Nuit à partir de <b>128€</b></span>
@@ -184,8 +185,8 @@
                 </div>
               </div>
             </div>
-            <div id="most-popular" class="card">
-              <img src="images/hebergements/4_small/eau.jpg" />
+            <div class="card most-popular">
+              <img alt="" src="images/hebergements/4_small/eau.jpg" />
               <div class="card-description">
                 <span class="title">Au coeur de l'eau Chambres d'hôtes</span>
                 <span class="content">Nuit à partir de <b>71€</b></span>
@@ -198,8 +199,8 @@
                 </div>
               </div>
             </div>
-            <div id="most-popular" class="card">
-              <img src="images/hebergements/4_small/bleu.jpg" />
+            <div class="card most-popular">
+              <img alt="" src="images/hebergements/4_small/bleu.jpg" />
               <div class="card-description">
                 <span class="title">Hôtel Tout bleu et Blanc</span>
                 <span class="content">Nuit à partir de <b>68€</b></span>
@@ -216,37 +217,38 @@
         </div>
       </div>
 
-      <div class="container">
+      <div class="container-column">
+        <span id="activités" class="headline">Activités à Marseille</span>
         <div class="interests">
           <div class="column-single">
             <div class="single">
-              <img src="images/activites/4_small/port.jpg" />
+              <img alt="" src="images/activites/4_small/port.jpg" />
               <span class="title">Vieux Port</span>
             </div>
           </div>
           <div class="column-double">
             <div class="double">
-              <img src="images/activites/4_small/fort.jpg" />
+              <img alt="" src="images/activites/4_small/fort.jpg" />
               <span class="title">Fort de Pomègues</span>
             </div>
             <div class="double">
-              <img src="images/activites/4_small/frioul.jpg" />
+              <img alt="" src="images/activites/4_small/frioul.jpg" />
               <span class="title">Îles du Frioul</span>
             </div>
           </div>
           <div class="column-single">
             <div class="single">
-              <img src="images/activites/4_small/callanques.jpg" />
+              <img alt="" src="images/activites/4_small/callanques.jpg" />
               <span class="title">Parc National des Calanques</span>
             </div>
           </div>
           <div class="column-double">
             <div class="double">
-              <img src="images/activites/4_small/dame.jpg" />
+              <img alt="" src="images/activites/4_small/dame.jpg" />
               <span class="title">Notre-Dame-de-la-Garde</span>
             </div>
             <div class="double">
-              <img src="images/activites/4_small/longchamp.jpg" />
+              <img alt="" src="images/activites/4_small/longchamp.jpg" />
               <span class="title">Parc Longchamp</span>
             </div>
           </div>
