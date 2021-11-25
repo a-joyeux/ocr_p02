@@ -17,8 +17,6 @@
 body {
   background-color: var(--main-background);
   font-family: "Raleway", sans-serif;
-  margin-left: 30px;
-  margin-right: 10px;
   display: flex;
   flex-direction: column;
 }
@@ -38,6 +36,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   padding-left: 30px;
+  margin-left: 50px;
   align-items: stretch;
   height: 10vh;
 }
@@ -45,6 +44,7 @@ header {
 img.logo {
   align-self: center;
   height: 40px;
+  padding-top: 40px;
 }
 
 nav {
@@ -55,7 +55,7 @@ nav {
 }
 
 main {
-  margin: 10px;
+  margin: 50px 50px 50px 50px;
 }
 
 main h3 {
@@ -69,8 +69,11 @@ main h3 {
 
 /* TODO: Spécifier les icones */
 .fas:before {
-  font-size: 16px;
   color: var(--main-blue);
+}
+
+.fas.secondary-icon:before {
+  color: black;
 }
 
 input:focus {
@@ -78,10 +81,14 @@ input:focus {
 }
 
 .icon {
-  color: var(--main-blue);
   background-color: var(--secondary-blue);
-  padding: 10px;
   border-radius: 50%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.secondary-icon {
+  font-size: 16px;
 }
 
 .icons:hover {
@@ -103,7 +110,28 @@ input:focus {
 }
 
 .headline {
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--main-grey);
+  gap: 200px;
+  padding-left: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+}
+
+footer > div > ul > li {
+  margin-top: 15px;
+  font-size: 14px;
 }
 
 .box {
