@@ -137,9 +137,10 @@ span.info-icon ::before {
   margin-top: 10px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-  width: 180px;
+  width: 150px;
   cursor: pointer;
   position: relative;
+  flex-basis: 30%;
 }
 
 .card a {
@@ -187,9 +188,10 @@ span.info-icon ::before {
 }
 .card-list {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   flex-wrap: wrap;
   align-self: center;
+  justify-content: center;
 }
 
 .places {
@@ -199,6 +201,20 @@ span.info-icon ::before {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  justify-content: baseline;
+}
+
+#display-more {
+  margin-top: 50px;
+}
+
+#all.places {
+  flex: 2;
+  justify-content: center;
+}
+
+#other.places {
+  flex: 1;
 }
 
 .title-icon {
