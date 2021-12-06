@@ -1,0 +1,121 @@
+/* Tablet media */
+
+@media screen and (max-width: 992px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  .search > .button {
+    display: flex;
+  }
+
+  .search > .icons.magnifying {
+    display: none;
+  }
+}
+
+/* Mobile media */
+
+@media screen and (max-width: 768px) {
+  header {
+    height: auto;
+    margin-left: 0;
+    padding-left: 0;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  nav {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  main {
+    margin: 0;
+  }
+
+  ul.menu {
+    justify-content: space-around;
+  }
+
+  ul.menu li {
+    padding: 0;
+    display: flex;
+    border-top: none;
+    border-bottom: 2px solid var(--main-grey);
+    width: 100%;
+    justify-content: center;
+  }
+
+  ul.menu li:hover {
+    border-bottom: 2px solid var(--main-blue);
+    border-top: none;
+    color: var(--main-blue);
+  }
+
+  .search {
+    width: 90%;
+    justify-content: center;
+  }
+
+  .search form {
+    width: 90%;
+  }
+
+  .search input {
+    width: 100%;
+  }
+
+  .search > .icons.magnifying {
+    display: flex;
+    background-color: var(--main-blue);
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+    padding: 15px;
+  }
+
+  .search > .icons.magnifying > .fas::before {
+    color: white;
+  }
+
+  .search > .icons > .fas::before {
+    color: black;
+  }
+
+  .search > .button {
+    display: none;
+  }
+
+  .interests {
+    flex-direction: column;
+  }
+
+  .column-single > .single > img {
+    height: 120px;
+  }
+
+  .column-double {
+    gap: 30px;
+  }
+
+  .main-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+
+  .filter-list h3 {
+    width: 100%;
+  }
+
+  .card.all {
+    height: 180px;
+  }
+
+  .card-description {
+  }
+}

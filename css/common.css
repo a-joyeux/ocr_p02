@@ -26,11 +26,6 @@ body {
   flex-direction: row;
 }
 
-.title {
-  font-weight: bold;
-  font-size: 12px;
-}
-
 header {
   display: flex;
   flex-direction: row;
@@ -101,6 +96,7 @@ input:focus {
   display: flex;
   flex-direction: row;
   column-gap: 20px;
+  row-gap: 20px;
 }
 
 .container-column {

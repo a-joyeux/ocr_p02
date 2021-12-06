@@ -18,6 +18,7 @@
   border-right: 2px solid var(--main-grey);
   border-bottom: 2px solid var(--main-grey);
   padding-right: 10px;
+  font-size: 12px;
 }
 
 /* Search component */
@@ -53,6 +54,11 @@
 
 .search > form > input::placeholder {
   padding-left: 10px;
+  color: black;
+}
+
+.search > .icons.magnifying {
+  display: none;
 }
 
 .search > form > input {
@@ -80,9 +86,10 @@ ul.menu {
 
 ul.menu li {
   display: flex;
-  align-items: center;
-  border-top: 2px solid var(--main-background);
-  padding: 40px 20px 0px 20px;
+  border-top: 2px solid var(--main-grey);
+  width: 100%;
+  padding-top: 30px;
+  justify-content: center;
 }
 
 ul.menu li:hover {
@@ -94,6 +101,7 @@ ul.menu a,
 ul.menu a:visited {
   text-decoration: none;
   color: inherit;
+  margin-bottom: 20px;
 }
 
 ul.menu a:hover {
@@ -140,7 +148,11 @@ span.info-icon ::before {
   width: 150px;
   cursor: pointer;
   position: relative;
-  flex-basis: 30%;
+  flex-basis: 25%;
+}
+
+.card.all {
+  min-width: 150px;
 }
 
 .card a {
@@ -164,6 +176,10 @@ span.info-icon ::before {
   margin-top: 5px;
   display: flex;
   flex-direction: column;
+}
+
+div .card.all > .card-description {
+  height: 70px;
 }
 
 .card-description .stars-rating {
@@ -198,10 +214,8 @@ span.info-icon ::before {
   background-color: var(--main-grey);
   padding: 30px;
   border-radius: 10px;
-  display: flex;
   flex-direction: column;
   gap: 10px;
-  justify-content: baseline;
 }
 
 #display-more {
@@ -210,7 +224,6 @@ span.info-icon ::before {
 
 #all.places {
   flex: 2;
-  justify-content: center;
 }
 
 #other.places {
@@ -234,13 +247,12 @@ span.info-icon ::before {
 .most-popular.card {
   display: flex;
   flex-direction: row;
-  height: 120px;
   width: 100%;
+  align-items: center;
 }
 
 .most-popular.card img {
   width: 140px;
-  height: 100%;
   border-radius: 20px 0px 0px 20px;
 }
 
@@ -250,11 +262,7 @@ span.info-icon ::before {
 }
 
 .most-popular > .card-description {
-  margin: 10px 20px 10px 20px;
-}
-
-.most-popular.places {
-  width: 33%;
+  padding: 10px 20px 10px 20px;
 }
 
 .interests {
