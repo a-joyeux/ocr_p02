@@ -11,6 +11,17 @@
   .search > .icons.magnifying {
     display: none;
   }
+
+  .interests {
+    flex-direction: column;
+  }
+
+  .column-single > .single > img {
+    height: 120px;
+  }
+  .column-double {
+    gap: 30px;
+  }
 }
 
 /* Mobile media */
@@ -93,14 +104,6 @@
     flex-direction: column;
   }
 
-  .column-single > .single > img {
-    height: 120px;
-  }
-
-  .column-double {
-    gap: 30px;
-  }
-
   .main-bar {
     display: flex;
     flex-direction: column;
@@ -112,10 +115,25 @@
     width: 100%;
   }
 
-  .card.all {
-    height: 180px;
+  .filter-list {
+    margin: 30px;
   }
 
-  .card-description {
+  .main-bar > .title {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .card.all {
+    height: 180px;
+    flex-basis: 100%;
+  }
+
+  #all.places {
+    background-color: white;
+  }
+
+  .container-column {
+    margin: 30px;
   }
 }
