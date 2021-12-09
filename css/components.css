@@ -148,7 +148,7 @@ span.info-icon ::before {
   width: 150px;
   cursor: pointer;
   position: relative;
-  flex-basis: 25%;
+  flex-basis: 30%;
 }
 
 .card.all {
@@ -194,7 +194,7 @@ div .card.all > .card-description {
 }
 
 .card-description > .stars-rating > .fas.grey-star::before {
-  color: var(--main-grey);
+  color: #b0aea7;
 }
 
 .card-description .content {
@@ -205,8 +205,6 @@ div .card.all > .card-description {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  align-self: center;
-  justify-content: center;
 }
 
 .places {
